@@ -1,4 +1,19 @@
 ##########################################
+## General and Networking
+##########################################
+
+server.host: '0.0.0.0'
+server.shutdownTimeout: '5s'
+monitoring.ui.container.elasticsearch.enabled: true
+xpack.screenshotting.browser.chromium.disableSandbox: true
+
+##########################################
+## Security
+##########################################
+
+elasticsearch.username: 'kibana_system'
+
+##########################################
 ## Telemetry
 ##########################################
 
@@ -20,15 +35,4 @@ logging:
         highlight: true
   root:
     appenders: [console_appender]
-    level: warn
-
-##########################################
-## Proxy Auth
-##########################################
-
-# requires the Search Guard plugin
-# searchguard.auth.type: 'proxy'
-
-# configured headers, notably x-forwarded-for is provided by Search Guard plugin
-elasticsearch.requestHeadersWhitelist:
-  ['Authorization', 'sgtenant', 'x-proxy-user', 'x-proxy-roles']
+    level: info

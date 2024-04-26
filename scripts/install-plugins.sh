@@ -18,12 +18,3 @@ docker run -it --rm \
 
 # cleanup
 rm $SC_PLUGIN
-
-# SC_PLUGIN_VERS=2.0.0-rc
-# SC_PLUGIN_URL=https://maven.search-guard.com/search-guard-flx-release/com/floragunn/search-guard-flx-elasticsearch-plugin/$SC_PLUGIN_VERS-es-$STACK_VERSION/search-guard-flx-elasticsearch-plugin-$SC_PLUGIN_VERS-es-$STACK_VERSION.zip
-
-# docker run -it --rm \
-#     -v $CNF_DIR:/usr/share/kibana/config \
-#     docker.elastic.co/kibana/kibana:$STACK_VERSION \
-#     bin/kibana-plugin install $SC_PLUGIN_URL
-

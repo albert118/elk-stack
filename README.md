@@ -5,7 +5,6 @@
 ```sh
 chmod +x setup.sh scripts/
 ./setup.sh
-docker compose up
 ```
 
 visit Kibana UI at <http://localhost:5601>
