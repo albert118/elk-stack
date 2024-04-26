@@ -5,4 +5,5 @@ verification_code
 
 # instance data 
 logfiles/*
-es-data01/*
+es-data*/*
+kibana-data/*
