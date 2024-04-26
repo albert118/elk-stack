@@ -1,0 +1,7 @@
+# secrets and stores
+*.env
+*.keystore
+
+# instance data 
+logfiles/*
+es-data01/*
