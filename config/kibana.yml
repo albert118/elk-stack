@@ -7,6 +7,9 @@ server.shutdownTimeout: '5s'
 monitoring.ui.container.elasticsearch.enabled: true
 xpack.screenshotting.browser.chromium.disableSandbox: true
 
+# future compatability as recommended by logs
+xpack.reporting.roles.enabled: false
+
 ##########################################
 ## Security
 ##########################################
