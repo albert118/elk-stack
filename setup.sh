@@ -16,8 +16,9 @@ $scripts/reset-password.sh
 echo Restarting to test auth config...
 docker compose down
 docker compose up -d
-read -r -p "Waiting a few seconds for compose restart (press any key to continue immediately)" -t 5 -n 1 -s
 
+read -r -p "Waiting a few seconds for compose restart - this will take longer for first time setup (press any key to continue immediately)" -t 10 -n 1 -s
+echo 
 $scripts/regenerate-enrollment-token.sh
 
 echo Setup complete!
