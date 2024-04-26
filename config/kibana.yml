@@ -1,0 +1,12 @@
+telemetry.allowChangingOptInStatus: false
+telemetry.optIn: false
+logging:
+  appenders:
+    console_appender:
+      type: console
+      layout:
+        type: pattern
+        highlight: true
+  root:
+    appenders: [console_appender]
+    level: warn

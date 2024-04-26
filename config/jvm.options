@@ -1,0 +1,19 @@
+################################################################
+
+# IMPORTANT:
+# This file should only be mounted through jvm.options.d/jvm.options
+# This preserves the original/root config file
+
+## JVM heap size doesn't need to be set here, as the container
+## already sets a mem-limit
+
+################################################################
+## Expert settings
+################################################################
+##
+## Note: this is set the same as the default EXCEPT we limit logging to WARNING level
+##
+
+-Xlog:disable
+-Xlog:all=warning:stderr:utctime,level,tags
+-Xlog:gc*,gc+age=warning,safepoint:file=logs/gc.log:utctime,level,pid,tags:filecount=32,filesize=64m
