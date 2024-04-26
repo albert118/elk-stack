@@ -1,6 +1,7 @@
 # secrets and stores
 *.env
 *.keystore
+verification_code
 
 # instance data 
 logfiles/*

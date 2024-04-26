@@ -1,5 +1,16 @@
+##########################################
+## Telemetry
+##########################################
+
+# opt-out of telemetry
 telemetry.allowChangingOptInStatus: false
 telemetry.optIn: false
+
+##########################################
+## Logging
+##########################################
+
+# reduce logging noise - limit to warnings only
 logging:
   appenders:
     console_appender:
@@ -10,3 +21,14 @@ logging:
   root:
     appenders: [console_appender]
     level: warn
+
+##########################################
+## Proxy Auth
+##########################################
+
+# requires the Search Guard plugin
+# searchguard.auth.type: 'proxy'
+
+# configured headers, notably x-forwarded-for is provided by Search Guard plugin
+elasticsearch.requestHeadersWhitelist:
+  ['Authorization', 'sgtenant', 'x-proxy-user', 'x-proxy-roles']

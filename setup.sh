@@ -4,4 +4,5 @@ source .env
 scripts_dir=./scripts
 
 $scripts_dir/create-keystores.sh
+$scripts_dir/install-plugins.sh
 $scripts_dir/regenerate-kibana-enrollment-token.sh
